@@ -25,7 +25,7 @@ public class App {
         System.out.println("Soma = " + soma);
 
         // teste
-        System.out.println("leo");
+        System.out.println("Soma realizada com sucesso!");
 
     }
 }
