@@ -10,20 +10,27 @@ public class main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         System.out.println("INFORME DOIS VALORES");
-        System.out.print("PRIMEIRO VALOR: ");
-        double valor1 = sc.nextDouble();
-        System.out.print("SEGUNDO VALOR: ");
-        double valor2 = sc.nextDouble();
-        if (valor1==0&&valor2==0){
+        System.out.print("VALOR DE X: ");
+        double x = sc.nextDouble();
+        System.out.print("VALOR DE Y: ");
+        double y = sc.nextDouble();
+        if (x==0&&y==0){
             System.out.print("ORIGEM");
         }
-        if (valor1>=0&&valor2>0){
-            System.out.print("Q1");
-        }
-        if (valor2>=0&&valor1>0){
+        if ((x>0) | (x==0) && (y>0)){
             System.out.print("Q1");
         }
         
+        if ((x<0) | (x==0) && (y>0)){
+            System.out.print("Q2");
+        }
+        
+        if ((x<0) | (x==0) && (y<0)){
+            System.out.print("Q3");
+        }
+        if ((x>0) | (x==0) && (y<0)){
+            System.out.print("Q4");
+        }
     }
     
 }
