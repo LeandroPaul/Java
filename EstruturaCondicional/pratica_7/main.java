@@ -17,19 +17,31 @@ public class main {
         if (x==0&&y==0){
             System.out.print("ORIGEM");
         }
-        if ((x>0) | (x==0) && (y>0)){
+        else if ((x>0) && (y>0)){
             System.out.print("Q1");
         }
         
-        if ((x<0) | (x==0) && (y>0)){
+        else if ((x<0) && (y>0)){
             System.out.print("Q2");
         }
         
-        if ((x<0) | (x==0) && (y<0)){
+        else if ((x<0) && (y<0)){
             System.out.print("Q3");
         }
-        if ((x>0) | (x==0) && (y<0)){
+        else if ((x>0) && (y<0)){
             System.out.print("Q4");
+        }
+        else if ((x==0) && (y<0)){
+            System.out.print("Q3 E Q4");
+        }
+        else if ((x==0) && (y>0)){
+            System.out.print("Q1 E Q2");
+        }
+        else if ((y==0) && (x>0)){
+            System.out.print("Q1 E Q4");
+        }
+        else if ((y==0) && (x<0)){
+            System.out.print("Q2 E Q3");
         }
     }
     
