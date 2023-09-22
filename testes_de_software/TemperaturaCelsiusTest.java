@@ -1,17 +1,19 @@
 package testes_de_software;
 
-import static org.junit.Assert.*;
+import org.junit.*;
+//import org.junit.Test;
+import org.junit.Assert;
 
-import org.junit.Test;
 
 public class TemperaturaCelsiusTest {
 
-    @Test
-    public void testConverteCelsiusParaFahrenheit() {
-        TemperaturaCelsius t = new TemperaturaCelsius(50);
-        assertEquals(122, t.converteCelsiusParaFahrenheit());
+      @Test
+    public void testConvert() {
+      
+        TemperaturaCelsius t = new TemperaturaCelsius(50.0);
+        Assert.assertTrue(t.ConverteCelsiusParaFahrenheit()==122);
 
         TemperaturaCelsius t2 = new TemperaturaCelsius(40);
-        assertEquals(104, t2.converteCelsiusParaFahrenheit());
+        Assert.assertTrue(t2.ConverteCelsiusParaFahrenheit()==104);
     }
 }

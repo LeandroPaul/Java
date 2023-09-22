@@ -9,7 +9,7 @@ public class TemperaturaCelsius {
 	        this.celsius = celsius;
 	    }
 
-	    public double converteCelsiusParaFahrenheit(){
+	    public double ConverteCelsiusParaFahrenheit(){
 	        fahrenheit = (1.8*celsius)+32;
 	        return fahrenheit;
 	    }
